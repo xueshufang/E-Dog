@@ -8,9 +8,12 @@ import {Router,Route,IndexRedirect,hashHistory,Redirect} from 'react-router'
 
 import GoodList from './javascripts/components/good-list/GoodList.js'
 
+
+
 let routes = <Router history={hashHistory}>
 	<Route path='/' component={App}>
-		<Route path="good-list" component={GoodList}/>
+	
+		<Route path="goodlist" component={GoodList}/>
 	</Route>
 	
 </Router>
