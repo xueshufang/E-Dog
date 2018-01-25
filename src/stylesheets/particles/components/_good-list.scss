@@ -1,6 +1,44 @@
-body{
-    background: #999;
-    font-size:14px; 
-    height:14px;
+body {
+    font-size: 14px;
+    .allkind .top {
+        position: relative;
+        background: #fff;
+        display: flex;
+        font-size: 0.13rem;
+        font-weight: 700;
+        padding: 0 0.15rem;
+        border-bottom: 1px solid #cbcbcb;
+        height: 40px;
+        z-index: 11;
+        a{
+            color: #333;
+        }
+        .sort {
+            text-align: right;
+            padding-right: 5%;
+        }
+        .nav-sort {
+            width: 50%;
+            height: 40px;
+            line-height: 40px;
+         
+        }
+        .active{
+            display: inline-block;
+            height: 40px;
+            padding: 0 4px;
+            color: #ed4044;
+            border-bottom: 2px solid #ed4044;
+        }
+        .brand {
+            padding-left: 5%;
+        }
+        .search {
+            position: absolute;
+            top: 13px;
+            right: 15px;
+            width: 14px;
+            height: 14px;
+        }
+    }
 }
-

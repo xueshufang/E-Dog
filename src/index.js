@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import {Router,Route,IndexRedirect,hashHistory,Redirect} from 'react-router'
 
-import GoodList from './javascripts/components/good-list/GoodList.js'
+import GoodList from './javascripts/components/goodlist/GoodList.js'
 
 
 
