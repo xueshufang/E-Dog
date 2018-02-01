@@ -1,58 +1,103 @@
-
-.rightbox{
+.rightbox {
     position: absolute;
-        top: 40px;
-        right: 0;
-        overflow-y: scroll;
-        bottom: 0;
-        margin-left: 75px;
-        border-top: 5px solid #f3f4f5; 
-    .bgfff{
+    top: 40px;
+    right: 0;
+    left: 75px;
+    overflow-y: scroll;
+    bottom: 0;
+    border-top: 5px solid #f3f4f5;
+    .bgfff {
         background: #fff;
     }
-    
-       .ft12{
-           font-size: 0.12rem;
-       }
-       .c999{
-           color: #999;
-       }
-       .pl15{
-           padding-left:5px ;
-       }
-       .mt10{
-           padding-top:10px;
-       }
-    ul{
-       
-        height:100%;
+    .ft12 {
+        font-size: 0.12rem;
+    }
+    .mt5{
+                    margin-top:5px
+                }
+    .c999 {
+        color: #999;
+    }
+    .pl15 {
+        padding-left: 5px;
+    }
+    .mt10 {
+        padding-top: 10px;
+    }
+    ul {
+        height: 100%;
         display: flex;
-       
         align-items: center;
         flex-flow: wrap;
-        li{
-            padding:0 5px;
+        li {
+            padding: 0 5px;
+            width: 29%;
+            text-align: center;
             .db {
-    display: block;
-}
-.w100 {
-    width: 100%;
-}
-.image{
-    width:0.86rem;
-    height: 0.86rem;
-}
+                display: block;
+            }
+            .w100 {
+                width: 100%;
+            }
+            .image {
+                width: 0.86rem;
+                height: 0.86rem;
+            }
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                height: 20px;
+            }
         }
     }
 }
-.sort-detail-list .hot-recom, .sort-detail-list .other-list {
+
+.sort-detail-list .hot-recom,
+.sort-detail-list .other-list {
     padding: 5px 5px 20px;
 }
-.title{
-        display: flex;
+
+.title {
+    display: flex;
     justify-content: space-between;
 }
+
 .arrowL {
     height: 10px;
     margin-top: 5px;
+}
+
+.bbtf3 {
+    border-top: 1px solid #f3f4f5;
+}
+
+.list2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .llogo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 46%!important;
+        .img {
+            width:130px;
+            border: 1px solid #f3f4f5;
+            text-align: center;
+            
+            padding: 0;
+            height: 55px;
+            .lheight {
+                margin: 0 auto;
+                margin-top: 4px;
+                height: 45px;
+                max-width: 100%;
+                
+            }
+        }
+    }
+}
+.f1{
+    padding-top: 5px;
 }

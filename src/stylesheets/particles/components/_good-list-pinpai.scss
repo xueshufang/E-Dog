@@ -1,0 +1,133 @@
+html{
+   background: #fff; 
+}
+body {
+    width: 100%;
+    .brand-list {
+        padding: 5px 5px 0 5px;
+        height:100%;     
+            .bgfff {
+                background: #fff;
+                
+                .ft12{
+                    font-size: 12px;
+                }
+                .c999{
+                    color:red;
+                }
+                .ftc{
+                    text-align: center;
+                }
+                .list{
+                    padding: 0 5px;
+                    li{
+                        margin-top: 20px;
+                        width: 33.33%;
+                        padding: 0 5px;
+                        block{
+                            display: block;
+                             .img {
+                                border: 1px solid #e2e2e2;
+                                text-align: center;
+                                padding: 50px 10px 10px;
+                                img {
+                                    max-width: 90%;
+                                    margin: 10px auto 0;
+                                    height: 40px;
+                                    right: 0;
+                                }
+                            }
+                        }
+                        .name {
+                            height: 20px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .address {
+                            height: 20px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .ft13{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+       
+    }
+}
+.title2{
+                   
+                    text-align: center;
+                    padding-top: 20px;
+                    font-size: 12px;
+                }
+.list{
+    float: left;
+    width: 33.33%;
+    li{
+        margin-top: 20px;
+        width: 33.33%;
+        padding: 0 5px;
+        text-align: center;
+       
+        a{
+            color: #333;
+            .img1{
+                padding:0px 0 10px 0;
+                height: 50px; 
+                border: 1px solid #e7e7e7;
+                width:1.11rem;
+                img{
+                    margin: 10px auto 0;
+                     height: 40px;
+                }
+            }
+            .name,.address{
+                height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width:1.11rem;
+            }
+            .ft13{
+                font-size: 0.13rem;
+            }
+            .ft12{
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+}
+
+
+
+//{
+//                  data.map((item,i)=>(
+//                      <div className="brand-list">
+//                          <p className="title2 ftc c999 ft12">—— {item.title}——</p>
+//                      <div>
+//                      {
+//                          item.list.map((item)=>( 
+//                              <ul className="list clearfix">
+//                                  <li className="fl rela">
+//                                      <a>
+//                                          <div className="img1  loadimg-nofixed rela">
+//                                              <img className="db image" src={item.logo}/>
+//                                          </div>
+//                                          <p className="name ftc ft13 mt5">{item.name}</p>
+//                                          <p className="address ftc c999 ft12">{item.address}</p>
+//                                      </a>
+//                                  </li>
+//                              </ul>
+//                                  
+//                                  ))
+//                              }
+//                          </div>
+//                          </div> 
+//                         ))
+//                  }

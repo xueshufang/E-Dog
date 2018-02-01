@@ -1,42 +1,40 @@
-import React,{Component} from 'react'
+import React, {
+	Component
+} from 'react'
 import GoodListRight from './GoodListRight'
-import GoodListLeft from  './GoodListLeft'
+import GoodListLeft from './GoodListLeft'
 import axios from 'axios'
+import { Link } from 'react-router'
 class GoodList extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props)
-		this.state={
-			data:[]
+		this.state = {
+			data: [],
+			cateid: 88888
 		}
 	}
-	componentWillMount(){
-		let that =this
-		axios.get('./mallcdn/v3/goods/category/main.html?pet_type=dog&system=wap&isWeb=1&version=303&_=1516767778985',{
-			
-		})
-		.then(function(data){
-			console.log(data)
-			that.setState({data:data.data.categorys})
-		})
-		.catch(function(error){
-			console.log(error,2)
+	changeId(cateid) {
+		this.setState({
+			cateid
 		})
 	}
-	render(){
-		let {data}=this.state
+	render() {
+		let {
+			data
+		} = this.state
 		return(
 			<div className="categorybox">
 				<div className="allkind">
 					<header className="top">
 						<div className="sort nav-sort ">
-							<a href="#" className="active">
+							<Link className='active' to='goodList'>
 								分类
-							</a>
+							</Link>
 						</div>
 						<div className="brand nav-sort ">
-							<a href="#" className="">
+							<Link className="" to='goodListPinpai'>
 								品牌
-							</a>
+							</Link>
 						</div>
 						<a href="#">
 							<img className="search"  src="https://static.epetbar.com/static_web/wap/src/images/background/search-ico.png"/>
@@ -45,8 +43,9 @@ class GoodList extends Component {
 					</header>
 				</div>
 				
-				<GoodListLeft data={data}/>
-				<GoodListRight data={data}/>
+				<GoodListLeft changeId={this.changeId.bind(this)} cateid={this.state.cateid} data={this.data}/>
+				
+				<GoodListRight cateid={this.state.cateid} />
 				
 			</div>
 		)
