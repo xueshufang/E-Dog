@@ -22,6 +22,9 @@ class GoodList extends Component {
 		let {
 			data
 		} = this.state
+
+	
+	render(){
 		return(
 			<div className="categorybox">
 				<div className="allkind">

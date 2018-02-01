@@ -1,7 +1,18 @@
-@import './particles/components/_App.scss';
+
 @import './particles/_reset.scss';
+@import './particles/_base.scss';
 @import './particles/_common.scss';
+
+@import './particles/components/_App.scss';
 @import './particles/components/_good-list.scss';
 @import './particles/components/good-list-left.scss';
 @import './particles/components/_good-list-right.scss';
 @import './particles/components/_good-list-pinpai.scss'
+@import './particles/components/_AppHome.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
