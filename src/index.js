@@ -12,9 +12,6 @@ import registerServiceWorker from './registerServiceWorker';
 import {Router,Route,IndexRedirect,hashHistory,Redirect} from 'react-router'
 
 
-
-
-import GoodList from './javascripts/components/goodlist/GoodList.js'
 import GoodListPinpai from './javascripts/components/goodlist/GoodListPinpai.js'
 
 let routes = <Router history={hashHistory}>
@@ -24,14 +21,13 @@ let routes = <Router history={hashHistory}>
 		<Route path='search' component={SearchGoods}/>
 		<Route path="goodlist" component={GoodList}/>
 		<Route path="goodListPinpai" component={GoodListPinpai}/>
-	</Route>
 		<Route path='*' component={Home}/>
 		<Redirect from='*' to='home'/>
 	</Route>	
-
 </Router>
 ReactDOM.render(
-	routes, document.getElementById('root'));
+	routes
+	, document.getElementById('root'));
 registerServiceWorker();
 
 

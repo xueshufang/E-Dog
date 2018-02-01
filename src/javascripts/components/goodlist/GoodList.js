@@ -24,7 +24,6 @@ class GoodList extends Component {
 		} = this.state
 
 	
-	render(){
 		return(
 			<div className="categorybox">
 				<div className="allkind">
@@ -54,4 +53,5 @@ class GoodList extends Component {
 		)
 	}
 }
+	
 export default GoodList
