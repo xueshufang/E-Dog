@@ -15,7 +15,7 @@ class DailyRushed extends Component {
     //https://mall.api.epet.com/v3/index/main.html?do=GetDynamicV315&pet_type=dog&version=358&system=wap&isWeb=1&_=1517369184250
     componentWillMount(){
         let that = this
-        axios.get('epet/v3/index/main.html',{
+        axios.get('./mallcdn/v3/index/main.html',{
             params:{
                 do:'GetDynamicV315',
                 pet_type:'dog',

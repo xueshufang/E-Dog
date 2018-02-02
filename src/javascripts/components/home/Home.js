@@ -28,7 +28,7 @@ class Home extends Component {
     //https://mallcdn.api.epet.com/v3/index/main.html?pet_type=dog&version=358&is_single=0&system=wap&isWeb=1&_=1516804292565
     componentWillMount(){
         let that = this
-        axios.get('/epet/v3/index/main.html',{
+        axios.get('./mallcdn/v3/index/main.html',{
             params:{
                 pet_type:'dog',
                 version:358,
