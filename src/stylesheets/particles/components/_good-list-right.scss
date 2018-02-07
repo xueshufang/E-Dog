@@ -27,11 +27,12 @@
     ul {
         height: 100%;
         display: flex;
+        
         align-items: center;
         flex-flow: wrap;
         li {
             padding: 0 5px;
-            width: 29%;
+            width: 33.33%;
             text-align: center;
             .db {
                 display: block;
@@ -47,7 +48,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                height: 20px;
+                
             }
         }
     }

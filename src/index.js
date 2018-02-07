@@ -4,15 +4,15 @@ import './stylesheets/index.scss';
 
 import App from './javascripts/App';
 import Home from './javascripts/components/home/Home';
-import GoodList from './javascripts/components/goodlist/GoodList.js'
-import SearchGoods from './javascripts/components/search/SearchGoods'
+import GoodList from './javascripts/components/goodlist/GoodList.js';
+import SearchGoods from './javascripts/components/search/SearchGoods';
 import registerServiceWorker from './registerServiceWorker';
+import GoodListPinpai from './javascripts/components/goodlist/GoodListPinpai.js';
+import Details from './javascripts/components/details/DetailsList.js';
+
+import {Router,Route,IndexRedirect,hashHistory,Redirect} from 'react-router';
 
 
-import {Router,Route,IndexRedirect,hashHistory,Redirect} from 'react-router'
-
-
-import GoodListPinpai from './javascripts/components/goodlist/GoodListPinpai.js'
 
 let routes = <Router history={hashHistory}>
 	<Route path='/' component={App}>
@@ -21,6 +21,7 @@ let routes = <Router history={hashHistory}>
 		<Route path='search' component={SearchGoods}/>
 		<Route path="goodlist" component={GoodList}/>
 		<Route path="goodListPinpai" component={GoodListPinpai}/>
+		<Route path="/detailsList/:id" component={Details}/>
 		<Route path='*' component={Home}/>
 		<Redirect from='*' to='home'/>
 	</Route>	

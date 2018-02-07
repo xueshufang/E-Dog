@@ -44,7 +44,7 @@ class GoodListPinpai extends Component {
 					<div className="brand nav-sort ">
 						<Link className="active" to='goodListPinpai'>品牌</Link>
 					</div>
-					<a href="#">
+					<a>
 						<img className="search"  src="https://static.epetbar.com/static_web/wap/src/images/background/search-ico.png"/>
 					</a>
 				</header>

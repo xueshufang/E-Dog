@@ -1,6 +1,4 @@
-import React, {
-	Component
-} from 'react'
+import React, {Component} from 'react'
 import GoodListRight from './GoodListRight'
 import GoodListLeft from './GoodListLeft'
 import axios from 'axios'

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from "react-router"
 import axios from 'axios'
 
 class GoodListRight extends Component {
@@ -77,15 +78,17 @@ class GoodListRight extends Component {
 							<img src="https://static.epetbar.com/static_wap/appmall/lib/goods/cate_right_img.png" className="fr arrowL mr5"/>
 						</a>
 						<ul>
+						
 							{list.map((item,i)=>(
 								<li key={i} className="f1 mt10">
-										<a className="db">
+										<Link to={'/detailsList/'+item.id_param}  className="db">
 											<div className="rela loadimg-nofixed">
+											
 												<img className="w100 image" src={item.photo}/>
 												
 											</div>
 											<p className="ftc ft13 mt10 c333">{item.name}</p>
-										</a>
+										</Link>
 								</li>	
 							))}
 						</ul>
@@ -102,13 +105,12 @@ class GoodListRight extends Component {
 							{list1.map((item,i)=>(
 								
 								<li key={i} className="f1 mt10 llogo rela">
-										<a className="db">
+										<Link className="db">
 											<div className="img loadimg-nofixed">
-												<img className="lheight" src={item.logo}/>
-												
+												<img className="lheight" src={item.logo}/>												
 											</div>
 											<p className="ftc ft12 mt5">{item.name}</p>
-										</a>
+										</Link>
 								</li>	
 							))}
 						</ul>
